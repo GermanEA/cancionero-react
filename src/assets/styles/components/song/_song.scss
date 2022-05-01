@@ -1,0 +1,36 @@
+.structure__container {
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+
+    .part__container {
+        @include flex(100%, row, flex-start, flex-start);
+        margin-bottom: 20px;
+
+        .part__first {
+            width: 20%;
+            text-transform: capitalize;
+        }
+
+        .part__second {
+
+            width: 80%;
+
+            .compass__container {
+                @include flex(100%, row, flex-start, center);
+                margin: auto;
+        
+                .compass__item {
+                    border-left: 2px solid $black;
+                    width: 50px;
+                    padding: 10px;
+                    text-transform: capitalize;
+        
+                    &:last-child {            
+                        border-right: 2px solid $black;
+                    }
+                }
+            }    
+        }
+    }
+}

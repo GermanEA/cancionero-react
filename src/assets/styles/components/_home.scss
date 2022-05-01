@@ -1,0 +1,38 @@
+.nav__main {
+    width: 100%;
+    background-color: $primary;
+    padding: 5px;
+    text-align: center;
+
+    .nav__input {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid $grey_light;
+        border-radius: 5px;
+
+        &:focus {            
+            border-color: $grey_dark;
+        }
+    }
+}
+
+.songs__container {
+    @include flex(100%, column, center, center);
+
+    .songs__item {
+        width: 70%;
+        padding: 5px;
+        border: 1px solid $grey_light;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+            color: $grey_dark;
+            background-color: $grey_light;
+            border-color: $grey_dark;
+        }
+    }
+}
